@@ -32,7 +32,7 @@
             justify-content: center;
 
             transform-style: preserve-3d;
-            transition: all linear 700ms;
+            transition: all 400ms cubic-bezier(0.60, 0.46, 0.45, 0.94);
     
         } .face{
             position: absolute;
@@ -55,8 +55,8 @@
             transform: rotateY(180deg);
             background-image: linear-gradient(to left,rgb(39, 145, 120), rgb(59, 17, 30));
         }
-        #card:hover{
-            transform: rotateY(180deg);
+        .flip{
+            transform: rotateY(180deg) translateY(-10px);
         }
     </style>
 </head>

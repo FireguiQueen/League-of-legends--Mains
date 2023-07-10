@@ -32,5 +32,9 @@ for(let i = 0; i < champList.length; i++){
     bodyPage.innerHTML += creatCard(champList[i]); 
 }
 
-const 
+
+const teste = document.querySelector('div');
+teste.addEventListener("click", function(){
+    teste.classList.toggle('flip')
+})
 
