@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wetg</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } body{
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <script>
+        function creatChamp(champion, maestria){
+            return{
+                champion,
+                maestria
+            }
+        }
+        const neeko = new creatChamp('neeko', 1000)
+        const champs = []
+
+        function creatCard(champion){
+            return `
+                <section id="card"> 
+                    <div class="face" id="front">
+                        <h1> ${champion} </h1>
+                    </div>
+                    <div class="face" id="back">
+                        <h1> Maestria </h1>
+                        <h2> ${champion.maestria} </h2>
+                    </div>
+                </section>
+            `}
+            document.querySelector('body').innerHTML = creatCard('Olavo')
+        </script>
+</body>
+
+</html>
