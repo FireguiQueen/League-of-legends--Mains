@@ -1,7 +1,7 @@
 // All my mains will be here.
 const champList = [];
 
-// Creating a new champion.
+// Creating a new champion. Parameters: Champion-name & champion-mastery
 function creatChamp(champion, mastery) {
   champList.push({
     champion,
@@ -11,9 +11,6 @@ function creatChamp(champion, mastery) {
 
 // My mains. Arguments: Champion-name & champion-mastery
 const neeko = creatChamp('neeko', 1000);
-const kassadin = creatChamp('kassadin', 1000);
-const veigar = creatChamp('veigar', 1000);
-const ekko = creatChamp('ekko', 1000);
 
 
 function creatCard(champion){
@@ -29,7 +26,6 @@ function creatCard(champion){
         </div>
     `
 }
-
 
 const bodyPage = document.querySelector('body');
 for(let i = 0; i < champList.length; i++){
