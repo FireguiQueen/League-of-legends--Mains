@@ -16,6 +16,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 30px;
         }
 
     </style>
@@ -23,30 +24,7 @@
 <body>
 
 
-    <script>
-        function creatChamp(champion, maestria){
-            return{
-                champion,
-                maestria
-            }
-        }
-        const neeko = new creatChamp('neeko', 1000)
-        const champs = []
-
-        function creatCard(champion){
-            return `
-                <section id="card"> 
-                    <div class="face" id="front">
-                        <h1> ${champion} </h1>
-                    </div>
-                    <div class="face" id="back">
-                        <h1> Maestria </h1>
-                        <h2> ${champion.maestria} </h2>
-                    </div>
-                </section>
-            `}
-            document.querySelector('body').innerHTML = creatCard('Olavo')
-        </script>
+    <script src="./test.js"> </script>
 </body>
 
 </html>
