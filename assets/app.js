@@ -32,4 +32,5 @@ for(let i = 0; i < champList.length; i++){
     bodyPage.innerHTML += creatCard(champList[i]); 
 }
 
+const 
 
