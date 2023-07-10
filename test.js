@@ -20,12 +20,11 @@ function creatCard(champion){
     const {champion: name, mastery } = champion
     return `
         <div id="card">
+            <section id="back" class="face">
+                <h1> ${mastery} </h1>
+            </section>
             <section id="front" class="face">
                 <h1> ${name} </h1>
-            </section>
-
-            <section id="back" class="face">
-                <h1> ${mastery} 
             </section>
         </div>
     `

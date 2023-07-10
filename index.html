@@ -18,7 +18,46 @@
             align-items: center;
             gap: 30px;
         }
+        :root{
+            --card-width: 100px;
+            --card-height: 100px;
+        }
 
+        #card{
+            height: var(--card-height);
+            width: var(--card-width);
+            color: white;
+
+            display: flex;
+            justify-content: center;
+
+            transform-style: preserve-3d;
+            transition: all linear 700ms;
+    
+        } .face{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #front{
+            background-image: linear-gradient(to left,rgb(39, 88, 145), rgb(26, 17, 59));
+            backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        
+        #back{
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to left,rgb(39, 145, 120), rgb(59, 17, 30));
+        }
+        #card:hover{
+            transform: rotateY(180deg);
+        }
     </style>
 </head>
 <body>
