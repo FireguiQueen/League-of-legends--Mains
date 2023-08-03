@@ -2,6 +2,7 @@
 const championList = [];
 
 
+
 // Gives the array a new champion. Parameters: champion-name & champion-mastery.  
 function newChampion(champion, mastery){
     championList.push({
@@ -9,6 +10,7 @@ function newChampion(champion, mastery){
         mastery
     })
 }
+
 
 // Creat a "champion card". --> Return name and mastery. For example: Lulu - 150,000
 function creatCard(champion){
@@ -26,8 +28,11 @@ function creatCard(champion){
     `
 }
 
+
+
 // Creat a new champion to "championList". Arguments: champion-name & champion-mastery.
 const kled = newChampion('Kled', 220000);
+
 
 
 const bodyPage = document.querySelector('body')
